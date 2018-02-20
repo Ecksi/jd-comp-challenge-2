@@ -15,26 +15,85 @@ body {
   background-size: stretch;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
-  background-color: darkslategray;
+  background-color: slategray;
   display: flex;
   height: 150px;
   justify-content: space-between;
+  opacity: 0.7;
 }
 
 .nav {
   align-self: flex-end;
-  margin: 0 0 30px 50px;  
+  margin: 0 0 30px 50px;
   text-transform: uppercase;
+  width: 50%;
 }
 
 .nav-list {
   display: flex;
+  height: 40px;
 }
 
 .nav-list-item {
+  color: skyblue;
+  height: 100%;
+  letter-spacing: 1px;
   list-style: none;
-  padding-right: 50px;
+  padding-right: 40px;
+  padding-top: 8px;
+}
+
+.nav-list-item:visted {
+  color: skyblue;
+}
+
+.icon {
+  background-repeat: no-repeat;  
+}
+
+.form-icon {
+  background-image: url('../images/forms-1.png');
+  padding-left: 35px;
+}
+
+.form-icon:hover {
+  background-image: url('../images/forms-2.png');
+}
+
+.form-icon:active {
+  background-image: url('../images/forms-3.png');
+}
+
+.equipment-icon {
+  background-image: url('../images/equipment-1.png');
+  padding-left: 45px;
+}
+
+.equipment-icon:hover {
+  background-image: url('../images/equipment-2.png');
+}
+
+.equipment-icon:active {
+  background-image: url('../images/equipment-3.png');
+}
+
+.force-icon {
+  background-image: url('../images/force-1.png');
+  background-size: 25px;  
+  padding-left: 40px;
+}
+
+.force-icon:hover {
+  background-image: url('../images/force-2.png');
+}
+
+.force-icon:active {
+  background-image: url('../images/force-3.png');
 }
 
 .aside {
@@ -43,31 +102,47 @@ body {
   justify-content: space-between;
 }
 
+.aside-icon {
+  background-image: url('../images/admin-1.png');
+  background-position-x: 10px;
+  background-position-y: -2px;
+  background-size: 25px;
+}
+
+.aside-icon:hover {
+  background-image: url('../images/admin-2.png');
+}
+
+.aside-icon:active {
+  background-image: url('../images/admin-3.png');
+}
+
 .aside-login {
-  color: blue;
+  color: skyblue;
   margin: 10px 20px 0 0;
+  padding: 6px;
   text-align: right;
 }
 
 .aside-image {
-  width: 200px;
   margin: 0 20px 20px 0;
+  width: 175px;
 }
 
 .description-container {
- margin: 25px 0 15px 15px;
+  margin: 25px 0 15px 15px;
 }
 
 .description-text {
   color: #f0ffff;
- font-size: 42px;
- font-weight: 400;
+  font-size: 42px;
+  font-weight: 400;
 }
 
 .main-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .card {
@@ -75,13 +150,15 @@ body {
   box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.2);
   height: 450px;
   margin: 10px;
+  opacity: 0.9;  
   width: 23%;
 }
 
 .card-top-background {
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
   display: flex;
   height: 35%;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
   justify-content: space-between;
 }
 
@@ -99,8 +176,8 @@ body {
 
 .card-rank-value {
   display: block;
-  margin-top: 5px;
   font-size: 30px;
+  margin-top: 5px;
 }
 
 .card-character-info {
@@ -109,13 +186,12 @@ body {
 
 .character-name {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   margin: 15px 0 5px 0;
 }
 
 .character-race {
   font-size: 14px;
-  color: gray;
 }
 
 .character-wiki {
@@ -126,15 +202,23 @@ body {
   word-wrap: break-word;
 }
 
+.character-link {
+  color: cadetblue;
+}
+
+.character-link:visted {
+  color: cadetblue;
+}
+
 .character-form {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
 .character-form-info {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 23px;
 }
 
 .character-force-level {
@@ -147,76 +231,36 @@ body {
   font-size: 28px;
 }
 
-.card-1 {
-
-}
-
 .obiwan {
   background-image: url('../images/obiwan.jpg');
-  background-size: cover;
-}
-
-.card-2 {
-
 }
 
 .yoda {
   background-image: url('../images/yoda.jpg');
-  background-size: cover;
-}
-
-.card-3 {
-
 }
 
 .ahsoka {
   background-image: url('../images/ahsoka.jpg');
-  background-size: cover;
-}
-
-.card-4 {
-
 }
 
 .rex {
   background-image: url('../images/rex.jpg');
-  background-size: cover;
-}
-
-.card-5 {
-
 }
 
 .maul {
   background-image: url('../images/maul.jpg');
-  background-size: cover;
-}
-
-.card-6 {
-
 }
 
 .palpatine {
   background-image: url('../images/palpatine.jpg');
-  background-size: cover;  
-}
-
-.card-7 {
-
 }
 
 .ventress {
   background-image: url('../images/asajj.jpg');
-  background-size: cover;
-}
-
-.card-8 {
-
 }
 
 .grevious {
-  background-image: url('../images/grievous.jpg');
-  background-size: cover;  
+  background-image: url('../images/grievous.jpg'); 
 }
 
 @media only screen and (max-width: 700px) {
@@ -226,15 +270,17 @@ body {
   }
 
   .nav {
-    flex-direction: flex-start;
-  }
-
-  .aside-login {
-
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
   }
 
   .aside-image {
     margin: auto;
+  }
+
+  .description-text {
+    text-align: center;
   }
 
   .main-container {
