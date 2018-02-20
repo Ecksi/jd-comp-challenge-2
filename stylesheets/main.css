@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', sans-serif;  
   margin: 0px;
   padding: 0px;
 }
@@ -9,8 +10,13 @@ html {
   height: 100%
 }
 
+body {
+  background-image: url('../images/sky-bg.jpg');
+  background-size: stretch;
+}
+
 .header {
-  background-color: slategray;
+  background-color: darkslategray;
   display: flex;
   height: 150px;
   justify-content: space-between;
@@ -18,7 +24,8 @@ html {
 
 .nav {
   align-self: flex-end;
-  border: 1px solid black;
+  margin: 0 0 30px 50px;  
+  text-transform: uppercase;
 }
 
 .nav-list {
@@ -26,6 +33,7 @@ html {
 }
 
 .nav-list-item {
+  list-style: none;
   padding-right: 50px;
 }
 
@@ -36,19 +44,24 @@ html {
 }
 
 .aside-login {
-
+  color: blue;
+  margin: 10px 20px 0 0;
+  text-align: right;
 }
 
 .aside-image {
-
+  width: 200px;
+  margin: 0 20px 20px 0;
 }
 
 .description-container {
-
+ margin: 25px 0 15px 15px;
 }
 
 .description-text {
-
+  color: #f0ffff;
+ font-size: 42px;
+ font-weight: 400;
 }
 
 .main-container {
@@ -58,96 +71,178 @@ html {
 }
 
 .card {
-  width: 23%;
-  height: 400px;
+  background-color: slategray;
+  box-shadow: 4px 4px 8px 0 rgba(255, 255, 255, 0.2);
+  height: 450px;
   margin: 10px;
+  width: 23%;
 }
 
-.card-background-image {
-  background-image: url('https://i.pinimg.com/736x/f1/03/c3/f103c3c8b80e7a8cc77958c0811f8853--team-unicorn-unicorns-art-drawing.jpg');
-  background-position: center;
-  background-position-y: 10%;
+.card-top-background {
   display: flex;
-  height: 30%;
+  height: 35%;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
   justify-content: space-between;
 }
 
 .card-flip-button {
-  margin-top: 20px;
-  margin-left: 20px;
+  border-radius: 50%;
+  height: 60px;
+  margin: 20px 0 0 20px;
+  width: 60px;
 }
 
 .card-rank {
-  margin-right: 20px;
+  color: white;
+  margin: 10px 20px 0 0;
 }
 
 .card-rank-value {
   display: block;
+  margin-top: 5px;
+  font-size: 30px;
 }
 
 .card-character-info {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .character-name {
-
-}
-
-.character-age {
-
-}
-
-.character-wiki {
-  background: rgba(0, 0, 0, 0.3);
-  margin-left: 2%;
-  word-wrap: break-word;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 15px 0 5px 0;
 }
 
 .character-race {
-
+  font-size: 14px;
+  color: gray;
 }
 
-.character-race-info {
-
+.character-wiki {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);  
+  margin: 20px 6% 20px 0;
+  padding: 10px;
+  word-wrap: break-word;
 }
 
-.character-homeland {
-
+.character-form {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
-.character-homeland-location {
+.character-form-info {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
 
+.character-force-level {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.character-force-level-rank {
+  color: skyblue;
+  font-size: 28px;
 }
 
 .card-1 {
-  background-color: lightcoral;
+
+}
+
+.obiwan {
+  background-image: url('../images/obiwan.jpg');
+  background-size: cover;
 }
 
 .card-2 {
-  background-color: lightseagreen;
+
+}
+
+.yoda {
+  background-image: url('../images/yoda.jpg');
+  background-size: cover;
 }
 
 .card-3 {
-  background-color: lightsteelblue
+
+}
+
+.ahsoka {
+  background-image: url('../images/ahsoka.jpg');
+  background-size: cover;
 }
 
 .card-4 {
-  background-color: lightgoldenrodyellow;
+
+}
+
+.rex {
+  background-image: url('../images/rex.jpg');
+  background-size: cover;
 }
 
 .card-5 {
-  background-color: rebeccapurple;
+
+}
+
+.maul {
+  background-image: url('../images/maul.jpg');
+  background-size: cover;
 }
 
 .card-6 {
-  background-color: peachpuff;
+
+}
+
+.palpatine {
+  background-image: url('../images/palpatine.jpg');
+  background-size: cover;  
 }
 
 .card-7 {
-  background-color: gainsboro;
+
+}
+
+.ventress {
+  background-image: url('../images/asajj.jpg');
+  background-size: cover;
 }
 
 .card-8 {
-  background-color: olivedrab;
+
+}
+
+.grevious {
+  background-image: url('../images/grievous.jpg');
+  background-size: cover;  
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    flex-direction: column-reverse;
+    height: 30%;
+  }
+
+  .nav {
+    flex-direction: flex-start;
+  }
+
+  .aside-login {
+
+  }
+
+  .aside-image {
+    margin: auto;
+  }
+
+  .main-container {
+    flex-direction: column;
+    margin-right: 6.25%;    
+  }
+
+  .card {
+    width: 100%;
+  }
 }
