@@ -157,6 +157,14 @@ a {
   width: 23%;
 }
 
+.light:hover {
+  box-shadow: 0 0 6px 6px rgba(63, 200, 242, 0.4);
+}
+
+.dark:hover{
+  box-shadow: 0 0 6px 6px rgba(245, 7, 7, 0.4);
+}
+
 .card-top-background {
   background-size: cover;
   background-position: center;
