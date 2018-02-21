@@ -49,6 +49,7 @@ a {
   list-style: none;
   padding-right: 40px;
   padding-top: 8px;
+  text-shadow: 1px 1px rgb(160, 224, 235);
 }
 
 .icon {
